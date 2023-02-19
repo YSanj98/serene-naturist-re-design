@@ -6,17 +6,19 @@ import Link from "./Link";
 
 
 type Props = {
+    isTopOfPage: boolean;
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Navbar = ({selectedPage,setSelectedPage}: Props) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
   const isAboveMediumScreens = mediaQuery("(min-width:1060px)");
   const [IsMenuToggled, setIsMenuToggled] = useState<boolean>(false);
+  const navBarBackground = isTopOfPage ? "" : "bg-red-100";
 
   return (
     <nav>
-      <div className="navbar fixed top-0 z-30 justify-between bg-base-100 py-6 text-primary-100">
+      <div className="${navBarBackground} navbar fixed top-0 z-30 justify-between bg-base-100 py-6 text-primary-100">
         <div className="flex items-center justify-between mx-auto w-5/6 ">
           {/*Temporary Header*/}
           <div className="flex-1">
@@ -73,12 +75,12 @@ const Navbar = ({selectedPage,setSelectedPage}: Props) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Benefits"
+              page="Services"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Classes"
+              page="About Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
