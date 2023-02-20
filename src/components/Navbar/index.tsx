@@ -18,7 +18,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
   return (
     <nav>
-      <div className="${navBarBackground} navbar fixed top-0 z-30 justify-between bg-base-100 py-6 text-primary-100">
+      <div className="${navBarBackground} navbar fixed top-0 z-30 justify-between bg-base-100 py-6 text-primary-100 bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF]">
         <div className="flex items-center justify-between mx-auto w-5/6 ">
           {/*Temporary Header*/}
           <div className="flex-1">
