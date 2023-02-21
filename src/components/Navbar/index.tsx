@@ -18,15 +18,15 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
   return (
     <nav>
-      <div className="${navBarBackground} navbar fixed top-0 z-30 justify-between bg-base-100 py-6 text-primary-100 bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF]">
+      <div className="${navBarBackground} navbar fixed top-0 z-30 justify-between bg-base-100 py-4 text-primary-100 bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF]">
         <div className="flex items-center justify-between mx-auto w-5/6 ">
           {/*Temporary Header*/}
           <div className="flex-1">
-            <a className="btn-ghost btn text-4xl normal-case">Serene Naturist</a>
+            <a className="btn-ghost btn font-medium text-4xl normal-case">Serene Naturist</a>
           </div>
           {/* Navbar responsive */}
           {isAboveMediumScreens ? (
-            <div className="flex items-center justify-between space-x-6 text-m">
+            <div className="flex items-center justify-between space-x-6 text-m font-bold">
             <Link
                 page="Home"
                 selectedPage={selectedPage}
@@ -59,7 +59,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
 
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && IsMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF] drop-shadow-xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-10 mr-12">
             <button onClick={() => setIsMenuToggled(!IsMenuToggled)}>
@@ -68,7 +68,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           </div>
 
           {/* MENU ITEMS */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl text-white">
+          <div className="ml-[33%] flex flex-col gap-20 text-2xl text-primary-100 font-bold">
             <Link
               page="Home"
               selectedPage={selectedPage}
