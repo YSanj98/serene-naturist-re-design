@@ -8,6 +8,7 @@ module.exports = {
         "primary-100" : "#61536c",
        },
       fontFamily: {
+        serif: ["Georgia"],
         poppins: ["Poppins", "sans-serif"],
       },
     },
