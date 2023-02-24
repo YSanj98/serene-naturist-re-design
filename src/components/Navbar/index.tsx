@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
-  const isAboveMediumScreens = mediaQuery("(min-width:1060px)");
+  const isAboveSmallScreens = mediaQuery("(min-width:850px)");
   const [IsMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const navBarBackground = isTopOfPage ? "" : "bg-red-100";
 
@@ -22,10 +22,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <div className="flex items-center justify-between mx-auto w-5/6 ">
           {/*Temporary Header*/}
           <div className="flex-1">
-            <a className="btn-ghost btn font-medium text-4xl normal-case">Serene Naturist</a>
+            <a className="btn-ghost btn font-medium text-3xl normal-case">Serene Naturist</a>
           </div>
           {/* Navbar responsive */}
-          {isAboveMediumScreens ? (
+          {isAboveSmallScreens ? (
             <div className="flex items-center justify-between space-x-6 text-m font-bold">
             <Link
                 page="Home"
@@ -58,7 +58,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
       </div>
 
       {/* MOBILE MENU MODAL */}
-      {!isAboveMediumScreens && IsMenuToggled && (
+      {!isAboveSmallScreens && IsMenuToggled && (
         <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF] drop-shadow-xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-10 mr-12">
