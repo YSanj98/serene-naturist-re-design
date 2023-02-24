@@ -26,6 +26,20 @@ const Home = (props: Props) => {
           </div>
         </div>
       </div>
+
+      {/*Mobile view*/}
+      {isBelowSmallScreens && (
+      <div className="text-primary-100 flex justify-center font-serif bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF] ">
+        <div className="w-5/6 mt-10">
+          <h1 className="text-center text-3xl font-bold">We are</h1>
+          <p className="px-2 text-justify text-xl py-6"> a small very professional Therapy Centre, 
+              we cater for the naturist client, ladies, gentlemen and couples are all welcome 
+              by prior appointment only. We offer a genuine naturist massage based on a professional 
+              Swedish Massage and also grooming therapies.
+          </p>
+        </div>
+      </div>
+      )}
       
       {/*Desktop view*/}
       {isAboveMediumScreens && (
