@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: { 
         "primary-500": "#272330",
-        "primary-100" : "#61536c",
+        "primary-100" : "#301c6c",
+
        },
       fontFamily: {
         serif: ["Georgia"],
@@ -15,7 +16,7 @@ module.exports = {
     screens: {
       xs: "480px",
       ss: "620px",
-      sm: "768px",
+      sm: "850px",
       md: "1060px",
       lg: "1200px",
       xl: "1700px",
