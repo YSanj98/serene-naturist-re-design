@@ -1,6 +1,6 @@
 import mediaQuery from '@/hooks/mediaQuery';
 import { SelectedPage } from '@/shared/types'
-
+import { motion } from "framer-motion";
 
 type Props = {
     setSelectedPage: (Value: SelectedPage) => void;
@@ -15,15 +15,17 @@ const Home = (props: Props) => {
       <div className="hero min-h-screen bg-[url('@/assets/images/hero.jpg')]">
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
+          <motion.div className="max-w-md" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ delay: 0.2, duration: 0.5 }} variants={{
+                      hidden: { opacity: 0, x: -50 },
+                      visible: { opacity: 1, x: 0 },}}>
             <h1 className="mb-5 text-5xl font-bold">Welcome To Serene Naturist</h1>
             <p className="mb-5">
               This Website is dedicated to our Naturist clients,
               people following a naturist lifestyle,
               and who are looking for a genuine naturist massage therapy experience
             </p>
-            <button className="btn bg-primary-100">Begin Therapy</button>
-          </div>
+            <button className="btn transition ease-in-out delay-150 bg-primary-100 hover:-translate-y-1 hover:scale-110 hover:bg-[#f39d1a] duration-300">Begin Therapy</button>
+          </motion.div>
         </div>
       </div>
 
