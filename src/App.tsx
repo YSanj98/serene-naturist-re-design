@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { SelectedPage } from '@/shared/types';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Service from './components/Services';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         setSelectedPage={setSelectedPage}  
       />
       <Home setSelectedPage={setSelectedPage} />
+      <Service setSelectedPage={setSelectedPage} />
     </div>
   );
 }
