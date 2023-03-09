@@ -22,7 +22,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         <div className="flex items-center justify-between mx-auto w-5/6 ">
           {/*Temporary Header*/}
           <div className="flex-1">
-            <a className="btn-ghost btn font-medium text-3xl normal-case">Serene Naturist</a>
+            <a className="btn-ghost btn font-medium text-[32px] xs:text-2xl normal-case">Serene Naturist</a>
           </div>
           {/* Navbar responsive */}
           {isAboveSmallScreens ? (
