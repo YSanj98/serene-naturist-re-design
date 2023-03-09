@@ -13,13 +13,21 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
     },
+
     screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "850px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
+      xs: {'max': '640px'},
+      // => @media (max-width: 640px) { ... }
+
+      sm: {'max': '767px'},
+      // => @media (max-width: 767px) { ... }
+  
+      md: {'max': '1023px'},
+      // => @media (max-width: 1023px) { ... }
+  
+      lg: {'min': '1024px'},
+      // => @media (max-width: 1279px) { ... }
+  
+    
     }
   },
   plugins: [require("daisyui")],
