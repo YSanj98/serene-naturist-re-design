@@ -1,6 +1,7 @@
 import mediaQuery from "@/hooks/mediaQuery";
 import { SelectedPage } from "@/shared/types";
 
+
 type Props = {
   setSelectedPage: (Value: SelectedPage) => void;
 }
@@ -15,7 +16,7 @@ const Service = (setSelectedPage: Props) => {
       <h1 className="text-center text-2xl font-medium pb-10 "> Not just only therapy center </h1>
     {isBelowSmallScreens && (
       <><div className="flex justify-center items-center text-[#ffffff] mb-10 mx-5">
-          <div className="card w-96 bg-base-100 bg-primary-100 mb-5 ">
+          <div className="card w-96 bg-primary-100 mb-5 ">
             <figure className="px-10 pt-10">
               <img src="src/assets/images/img-massage.jpg" alt="Massage image" className="rounded-xl" />
             </figure>
@@ -31,7 +32,7 @@ const Service = (setSelectedPage: Props) => {
         </div>
         
         <div className="flex justify-center items-center text-[#ffffff] mb-10 mx-5">
-          <div className="card w-96 bg-base-100 bg-primary-100 mb-5">
+          <div className="card w-96 bg-primary-100 mb-5">
             <figure className="px-10 pt-10">
               <img src="src/assets/images/img-therapy room.jpg" alt="Therapy room image" className="rounded-xl" />
             </figure>
@@ -39,7 +40,7 @@ const Service = (setSelectedPage: Props) => {
               <h2 className="card-title">Therapy Room</h2>
               <p className="text-justify">Relax in comfort and style, beauty, comfortable the therapy rooms.
                 we have 3 different rooms for the best naturist massage experience,
-                all decorated with claming colours and objects
+                all decorated with calming colours and objects
                 <br />
                 You receive a warm welcome and be offered a drink immediately,
                 your consultation also spends time  tailor making your therapy to
@@ -51,7 +52,7 @@ const Service = (setSelectedPage: Props) => {
         </div>
           
         <div className="flex justify-center items-center text-[#ffffff] mb-10 mx-5">
-          <div className="card w-96 bg-base-100 bg-primary-100 mb-5">
+          <div className="card w-96 bg-primary-100 mb-5">
             <figure className="px-10 pt-10">
               <img src="src/assets/images/img-shaving.jpeg" alt="Shaving image" className="rounded-xl" />
             </figure>
@@ -70,18 +71,18 @@ const Service = (setSelectedPage: Props) => {
         </div>
           
         <div className="flex justify-center items-center text-[#ffffff] mb-10 mx-5">
-          <div className="card w-96 bg-base-100 bg-primary-100">
+          <div className="card w-96 bg-primary-100">
             <figure className="px-10 pt-10">
               <img src="src/assets/images/img-couple.jpg" alt="Couple image" className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">Couple</h2>
-              <p className="text-justify">A naturist massage togethere can be a
+              <p className="text-justify">A naturist massage together can be a
                 wonderful way to affirm your closeness,
                 or to rekindle a romantic flame by
                 taking the time out to do some thing lovely
                 and relaxing together. it is a special and
-                a memorable way to celebrate a special occassion. <br />
+                a memorable way to celebrate a special occasion. <br />
                 i often see my self as a catalyst a
                 sort of a cupid figure, allowing and showing a couple
                 how to massage, how to nature and be tender with each other
@@ -92,9 +93,9 @@ const Service = (setSelectedPage: Props) => {
     )}
           {/* Desktop View */}
           {isAboveMediumScreens && (
-          <div className="grid grid-cols-4  gap-15">
+          <div className="flex justify-between px-20 gap-10 grid-cols-2">
 
-            <div className="text-[#ffffff] card w-96 bg-base-100 bg-primary-100 mb-5 ">
+            <div className="text-[#ffffff] card w-96 bg-base-100 bg-primary-100 mb-5">
               <figure className="px-10 pt-10">
                 <img src="src/assets/images/img-massage.jpg" alt="Massage image" className="rounded-xl" />
               </figure>
@@ -115,3 +116,4 @@ const Service = (setSelectedPage: Props) => {
 }
 
 export default Service
+
