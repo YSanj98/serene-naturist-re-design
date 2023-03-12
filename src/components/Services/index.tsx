@@ -90,6 +90,25 @@ const Service = (setSelectedPage: Props) => {
           </div>
         </div></>
     )}
+          {/* Desktop View */}
+          {isAboveMediumScreens && (
+          <div className="grid grid-cols-4  gap-15">
+
+            <div className="text-[#ffffff] card w-96 bg-base-100 bg-primary-100 mb-5 ">
+              <figure className="px-10 pt-10">
+                <img src="src/assets/images/img-massage.jpg" alt="Massage image" className="rounded-xl" />
+              </figure>
+              <div className="card-body items-center text-center">
+                <h2 className="card-title">Massage</h2>
+                <p className="text-justify">Our therapists are fully qualified Federation Members, who have trained in,
+                  amongst other things, Swedish Body Massage and Aromatherapy, also Indian Head Massage and Reflexology.
+                  full body, takes 2 hours plus, depending on exactly what is required.
+                  Hot stones and Infra red or Nova sonic equipment can also be incorporated into the naturist massage at no extra cost
+                </p>
+              </div>
+            </div>
+          </div>
+        )} 
   </div>  
     
   )
