@@ -95,7 +95,7 @@ const Service = (setSelectedPage: Props) => {
           {isAboveMediumScreens && (
           <div className="flex justify-center px-20 gap-10 grid grid-cols-1">
 
-            <div className="flex justify-around ">
+            <div className="flex justify-around gap-5">
 
               <div className="text-[#ffffff] card w-96 bg-base-100 bg-primary-100 mb-5">
                 <figure className="px-10 pt-10">
@@ -131,7 +131,8 @@ const Service = (setSelectedPage: Props) => {
 
           </div>
 
-          <div className="flex justify-around">
+          <div className="flex justify-around gap-5">
+
             <div className="text-[#ffffff] card w-96 bg-base-100 bg-primary-100 mb-5">
               <figure className="px-10 pt-10">
                 <img src="src/assets/images/img-shaving.jpeg" alt="Shaving image" className="rounded-xl" />
@@ -167,6 +168,7 @@ const Service = (setSelectedPage: Props) => {
                 </p>
               </div>
             </div>
+
           </div>
 
           </div>
