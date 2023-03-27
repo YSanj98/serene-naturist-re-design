@@ -149,7 +149,7 @@ const Service = (setSelectedPage: Props) => {
               </div>
             </div>
           
-            <div className="text-[#ffffff] card w-96 bg-base-100 bg-primary-100">
+            <div className="text-[#ffffff] card w-96 bg-base-100 bg-primary-100 mb-5">
               <figure className="px-10 pt-10">
                 <img src="src/assets/images/img-couple.jpg" alt="Couple image" className="rounded-xl" />
               </figure>
