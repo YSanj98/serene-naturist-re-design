@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Service from './components/Services';
 import AboutUs from './components/About us';
+import ContactUs from './components/Contact us';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Service setSelectedPage={setSelectedPage} />
       <AboutUs setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   );
 }
