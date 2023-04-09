@@ -19,9 +19,8 @@ body,
 
 .myclip{
 
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: circle(180vh at 50% -80vh);
 
     }
 
 }
-
