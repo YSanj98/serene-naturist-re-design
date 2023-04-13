@@ -31,7 +31,7 @@ const Home = (props: Props) => {
 
       {/*Mobile view*/}
       {isBelowSmallScreens && (
-      <div className="text-primary-100 flex justify-center font-serif bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF]">
+      <div className="text-primary-100 flex justify-center font-serif bg-[#f9f9f1]">
         <div className="w-5/6 mt-10">
           <h1 className="text-center text-3xl font-bold">We are</h1>
           <p className="px-2 text-justify text-xl py-6"> a small very professional Therapy Centre, 
@@ -45,7 +45,7 @@ const Home = (props: Props) => {
       
       {/*Desktop view*/}
       {isAboveMediumScreens && (
-          <div className="font-serif bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF]">
+          <div className="font-serif bg-[#f9f9f1]">
             <div className="justify-items-stretch justify-between flex items-center">
               <img src="src/assets/images/image1.jpg" className="place-content-center my-10 mx-20 max-w-sm rounded-lg shadow-2xl" />
               <div className='text-primary-100 px-4'>
