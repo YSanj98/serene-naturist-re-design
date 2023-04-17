@@ -1,4 +1,18 @@
-type Props = {}
+type Props = {
+    title: String,
+    item1: String,
+    item1price: String,
+    item2: String,
+    item2price: String,
+    item3: String,
+    item3price: String,
+    item4: String,
+    item4price: String,
+    item5: String,
+    item5price: String,
+
+
+}
 
 const PriceList = (props: Props) => {
   return ( 
