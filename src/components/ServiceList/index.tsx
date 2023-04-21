@@ -1,10 +1,10 @@
-type serviceLisrProps = {
+type serviceListProps = {
     image: string
     serviceTitle: string,
     description: string
 }
 
-const ServiceList = (props: serviceLisrProps) => {
+const ServiceList = (props: serviceListProps) => {
   return (
     <div className="text-[#ffffff] card w-96 bg-primary-100 mb-5">
         <figure className="px-10 pt-10">
