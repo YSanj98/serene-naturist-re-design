@@ -7,10 +7,8 @@ const priceData = [
         item2price: "$75",
         item3: "Bamboo Massage",
         item3price: "$70",
-        item4: "",
-        item4price: "",
-        item5: "",
-        item5price: "",
+        item4: "Swedish Massage",
+        item4price: "$50"
     },
     {
         title: "Facial & Makeup",
@@ -21,22 +19,18 @@ const priceData = [
         item3: "Full face Makeup",
         item3price: "$30",
         item4: "Eyes Only Makeup",
-        item4price: "$15",
-        item5: "",
-        item5price: "",
+        item4price: "$15"
     },
     {
         title: "Waxing and Shaving",
         item1: "Eyebrow Wax",
         item1price: "$6",
-        item2: "Half Leg",
-        item2price: "$15",
-        item3: "Full Leg",
-        item3price: "$25",
-        item4: "Underarm",
-        item4price: "$10",
-        item5: "Full Body Shaving",
-        item5price: "$40",
+        item2: "Full Leg",
+        item2price: "$25",
+        item3: "Underarm",
+        item3price: "$10",
+        item4: "Full Body Shaving",
+        item4price: "$40"
     },
 ]
 
