@@ -12,7 +12,7 @@ type Props = {
 
 const PriceList = (props: Props) => {
   return ( 
-      <div className="flex flex-col p-4 bg-white border border-primary-100 rounded-lg shadow sm:p-8">
+      <div className="flex flex-col p-4 mt-4 bg-white border border-primary-100 rounded-lg shadow sm:p-8 cursor-pointer transition-all ease-in-out duration-500 hover:bg-inherit hover:-translate-y-1 hover:scale-110">
         <h5 className="text-center text-xl pb-5 font-bold leading-none text-gray-900">{props.title}</h5>
        
         <div className="flow-root">
