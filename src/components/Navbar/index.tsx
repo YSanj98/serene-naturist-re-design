@@ -11,10 +11,9 @@ type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
+const Navbar = ({ selectedPage, setSelectedPage}: Props) => {
   const isAboveSmallScreens = mediaQuery("(min-width:850px)");
   const [IsMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-  const navBarBackground = isTopOfPage ? "" : "bg-red-100";
 
   return (
     <nav>
