@@ -6,7 +6,7 @@ type serviceListProps = {
 
 const ServiceList = (props: serviceListProps) => {
   return (
-    <div className="text-[#ffffff] card w-96 bg-primary-100 mb-5">
+    <div className="text-[#ffffff] card w-96 bg-primary-100 mb-5 outline outline-offset-2 outline-primary-100">
         <figure className="px-10 pt-10">
             <img src={props.image} alt="Shaving image" className="rounded-xl" />
         </figure>
