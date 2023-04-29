@@ -27,24 +27,29 @@ const Navbar = ({ selectedPage, setSelectedPage}: Props) => {
           {isAboveSmallScreens ? (
             <div className="flex items-center justify-between space-x-6 text-m font-bold">
             <Link
-                page="Home"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} 
+              page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
-            <Link 
-                page="Services"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} 
+            <Link
+              page="Services"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
-            <Link 
-                page="About Us"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} 
+            <Link
+              page="Prices"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
-            <Link 
-                page="Contact Us"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} 
+            <Link
+              page="Contact Us"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="About Us"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
             />
           </div> 
           ) : (
@@ -79,12 +84,17 @@ const Navbar = ({ selectedPage, setSelectedPage}: Props) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="About Us"
+              page="Prices"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
               page="Contact Us"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="About Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
