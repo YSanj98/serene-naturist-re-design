@@ -14,8 +14,11 @@ type Props = {
 const Price = (props: Props) => {
   return (
     <>
-      <div className="flex justify-center bg-[#f9f9f1] pb-[50px] mt-20">
-        <div className="carousel w-3/5 h-50 mt-20">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#bce2e9" fill-opacity="1" d="M0,192L1440,256L1440,320L0,320Z"></path>
+      </svg>
+      <div className="flex justify-center bg-[#bce2e9] pb-[50px]">
+        <div className="carousel w-3/5 h-50">
 
           <div id="slide1" className="carousel-item relative w-full">
             <img src={img1carousel} className="w-full" />
@@ -52,7 +55,7 @@ const Price = (props: Props) => {
         </div>
       </div>
 
-      <div className="bg-[#f9f9f1] w-full">
+      <div className="bg-[#bce2e9] w-full">
         <h1 className="text-center text-2xl font-medium pt-10 pb-10 underline">Prices</h1>
         <div className="grid place-items-center md:grid-rows-3 gap-5 lg:grid-cols-3 md:grid-cols-1 pt-5 pb-10">
           {priceData?.map(({title, item1, item1price, item2, item2price, item3, item3price, item4, item4price}, index) => {
@@ -71,7 +74,7 @@ const Price = (props: Props) => {
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#f9f9f1" fill-opacity="1" d="M0,256L34.3,213.3C68.6,171,137,85,206,90.7C274.3,96,343,192,411,202.7C480,213,549,139,617,122.7C685.7,107,754,149,823,160C891.4,171,960,149,1029,138.7C1097.1,128,1166,128,1234,149.3C1302.9,171,1371,213,1406,234.7L1440,256L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+        <path fill="#bce2e9" fill-opacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
       </svg>
     </>
 
