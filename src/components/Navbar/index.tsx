@@ -3,6 +3,7 @@ import { SelectedPage } from "@/shared/types";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import Link from "./Link";
+import logo from "@/assets/images/serene-logo.png"
 
 
 type Props = {
@@ -18,10 +19,11 @@ const Navbar = ({ selectedPage, setSelectedPage}: Props) => {
   return (
     <nav>
       <div className="${navBarBackground} navbar fixed top-0 z-30 justify-between bg-base-100 py-4 text-primary-100 bg-gradient-to-r from-[#EFF0DB] to-[#FFFFFF]">
-        <div className="flex items-center justify-between mx-auto w-5/6 ">
-          {/*Temporary Header*/}
-          <div className="flex-1">
-            <a className="btn-ghost btn font-medium text-[32px] xs:text-2xl normal-case">Serene Naturist</a>
+        <div className="flex items-center justify-between mx-auto w-[90%] ">
+          {/*Header*/}
+          <div className="flex items-center">
+            <img src={logo} alt="Logo" className="w-24 h-24" />
+            <a href="" className="font-medium text-[32px] xs:text-2xl normal-case">Serene Naturist</a>
           </div>
           {/* Navbar responsive */}
           {isAboveSmallScreens ? (
