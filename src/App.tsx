@@ -3,8 +3,8 @@ import { SelectedPage } from '@/shared/types';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Service from './components/Services';
-import ContactUs from './components/Contact us';
 import Price from './components/Price';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Service setSelectedPage={setSelectedPage} />
       <Price setSelectedPage={setSelectedPage} />
-      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
