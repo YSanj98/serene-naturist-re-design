@@ -1,18 +1,24 @@
 import mediaQuery from '@/hooks/mediaQuery';
 import { SelectedPage } from '@/shared/types'
 import { motion } from "framer-motion";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+
 
 type Props = {
     setSelectedPage: (Value: SelectedPage) => void;
 };
 
-const Home = (props: Props) => {
+const Home = ({ setSelectedPage }: Props) => {
     const isAboveMediumScreens = mediaQuery("(min-width:850px)");
     const isBelowSmallScreens = mediaQuery("(max-width:850px)");
+    useEffect(()=> {AOS.init({duration: 1000});}, []);
   return (
+    
     //Main hero section
     <div>
-      <div className="hero min-h-screen bg-[url('@/assets/images/hero.jpg')]">
+      <div className="hero w-full min-h-screen bg-[url('@/assets/images/hero.jpg')]">
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <motion.div className="max-w-md" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ delay: 0.2, duration: 0.5 }} variants={{
@@ -31,42 +37,46 @@ const Home = (props: Props) => {
 
       {/*Mobile view*/}
       {isBelowSmallScreens && (
-      <div className="text-primary-100 flex justify-center font-serif bg-[#f9f9f1]">
-        <div className="w-5/6 mt-10">
-          <h1 className="text-center text-3xl font-bold">We are</h1>
-          <p className="px-2 text-justify text-xl py-6"> a small very professional Therapy Centre, 
-              we cater for the naturist client, ladies, gentlemen and couples are all welcome 
-              by prior appointment only. We offer a genuine naturist massage based on a professional 
+      <><div className="text-primary-100 flex justify-center font-serif bg-white">
+          <div className="w-5/6 mt-10" data-aos="flip-up">
+            <h1 className="text-center text-3xl font-bold">We are</h1>
+            <p className="px-2 text-justify text-xl py-6"> a small very professional Therapy Centre,
+              we cater for the naturist client, ladies, gentlemen and couples are all welcome
+              by prior appointment only. We offer a genuine naturist massage based on a professional
               Swedish Massage and also grooming therapies.
-          </p>
+            </p>
+          </div>
         </div>
-      </div>
+        <div className="divider"></div>
+        </>
       )}
       
       {/*Desktop view*/}
       {isAboveMediumScreens && (
-          <div className="font-serif bg-[#f9f9f1]">
-            <div className="justify-items-stretch justify-between flex items-center">
-              <img src="src/assets/images/image1.jpg" className="place-content-center my-10 mx-20 max-w-sm rounded-lg shadow-2xl" />
-              <div className='text-primary-100 px-4'>
-                <h1 className="text-center text-3xl font-bold pt-5 pb-5">We are</h1>
-                <p className="text-justify text-xl py-6 px-6 font-medium"> a small very professional Therapy Centre, 
-                we cater for the naturist client, ladies, gentlemen and couples are all welcome 
-                by prior appointment only. We offer a genuine naturist massage based on a professional 
-                Swedish Massage and also grooming therapies. <br/><br/>
-                We are based in professional premises of the highest standard. We have beautiful 
-                therapy rooms with sophisticated decor whilst being warm welcoming and very comfortable. 
-                There are shower facilities. There is secure off- road parking for 4 vehicles on recorded CCTV camera for your convenience and peace of mind. 
+          <><div className="font-serif bg-white">
+          <div className="justify-items-stretch justify-between flex items-center">
+            <img src="src/assets/images/image1.jpg" className="place-content-center my-10 mx-20 max-w-sm rounded-lg shadow-2xl" data-aos="fade-right" />
+            <div className='text-primary-100 px-4' data-aos="fade-left">
+              <h1 className="text-center text-3xl font-bold pt-5 pb-5">We are</h1>
+              <p className="text-justify text-xl py-6 px-6 font-medium"> a small very professional Therapy Centre,
+                we cater for the naturist client, ladies, gentlemen and couples are all welcome
+                by prior appointment only. We offer a genuine naturist massage based on a professional
+                Swedish Massage and also grooming therapies. <br /><br />
+                We are based in professional premises of the highest standard. We have beautiful
+                therapy rooms with sophisticated decor whilst being warm welcoming and very comfortable.
+                There are shower facilities. There is secure off- road parking for 4 vehicles on recorded CCTV camera for your convenience and peace of mind.
                 We open Mon to Fri we can offer some early evening appointments with enough notice. We are qualified and insured. Its best to call early mornings
-                </p>
-              </div>
+              </p>
             </div>
+          </div>
         </div>
+        <div className="divider"></div>
+        </>
       )}
     </div>
-    
 
     
+
   )
 };
 
