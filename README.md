@@ -13,6 +13,7 @@ This has a bad design. However, we can't visit that website at this moment. but 
 - Tailwind CSS
 - Typescript
 - Git
+- Daisy UI
 - Vs code
 
 
@@ -25,6 +26,7 @@ git clone https://github.com/YSanj98/re-design-project.git
 ```
 - after cloning the repository, go to the exact directory.
 - install npm packages using the `npm install` command.
+- Also install and setup Daisy UI and Animation On Scroll (AOS) 
 - then the run `npm run dev` command.
 - website will run on http://127.0.0.1:5173/
 
