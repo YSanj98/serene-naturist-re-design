@@ -3,8 +3,18 @@ import { useState } from "react";
 import Form from "../Form";
 import inputs from "@/shared/formData";
 
+type Props = {
+    setSelectedPage: (Value: SelectedPage) => void;
+    values:{
+      name:String,
+      email:String,
+      appointmentDate:String,
+      
+    }
+}
 
-const ContactUs = () => {
+
+const ContactUs = (props: Props) => {
   const [values, setValues] = useState({
     fullname: "",
     email: "",
