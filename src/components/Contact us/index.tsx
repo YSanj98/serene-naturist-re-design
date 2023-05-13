@@ -1,6 +1,31 @@
+import { SelectedPage } from "@/shared/types";
+import { useState } from "react";
 import Form from "../Form";
 import inputs from "@/shared/formData";
 
+
+const ContactUs = () => {
+  const [values, setValues] = useState({
+    fullname: "",
+    email: "",
+    appointmentDay: "",
+    massage:"",
+
+  });
+
+const handleSubmit = (e: 
+  { preventDefault: () => void; }
+  ) => {
+    e.preventDefault();
+  };
+
+const onChange = (e: 
+  { target: { name: any; value: any; }; }
+  ) => {
+  setValues(
+    { ...values, [e.target.name]: e.target.value }
+    );
+};
 
   return (
     <div className="flex items-center justify-center w-ful mb-10">
