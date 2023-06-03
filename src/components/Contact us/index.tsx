@@ -4,14 +4,14 @@ import Form from "../Form";
 import inputs from "@/shared/formData";
 
 type Props = {
-    setSelectedPage: (Value: SelectedPage) => void;
-    values:{
-      name:String,
-      email:String,
-      appointmentDate:String,
-      
-    }
-}
+  setSelectedPage: (Value: SelectedPage) => void;
+  values: {
+    name: string;
+    email: string;
+    appointmentDate: string;
+  };
+};
+
 
 
 const ContactUs = (props: Props) => {
@@ -30,7 +30,7 @@ const handleSubmit = (e:
   };
 
 const onChange = (e: 
-  { target: { name: any; value: any; }; }
+  { target: { name: string; value: string; }; }
   ) => {
   setValues(
     { ...values, [e.target.name]: e.target.value }
@@ -38,8 +38,8 @@ const onChange = (e:
 };
 
   return (
-    <div className="flex items-center justify-center w-ful mb-10">
-      <div className="flex items-center justify-center bg-gradient-to-r from-[#a8a8b8] via-[#c6c6c6] to-[#a8a8b8] w-3/5 rounded-lg">
+    <div className="flex items-center justify-center w-ful mb-20">
+      <div className="flex items-center justify-center bg-gradient-to-r from-[#a8a8b8] via-[#c6c6c6] to-[#a8a8b8] w-3/5 rounded-lg mb-20">
         <div className="flex items-center justify-center">
           <form action="#" method="POST" onSubmit={handleSubmit} className="">
             <h1 className="text-center text-[30px] text-primary-100 font-semibold mt-10 mb-10">BOOK AN APPOINMENT</h1>
