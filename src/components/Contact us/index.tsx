@@ -4,14 +4,14 @@ import Form from "../Form";
 import inputs from "@/shared/formData";
 
 type Props = {
-    setSelectedPage: (Value: SelectedPage) => void;
-    values:{
-      name:String,
-      email:String,
-      appointmentDate:String,
-      
-    }
-}
+  setSelectedPage: (Value: SelectedPage) => void;
+  values: {
+    name: string;
+    email: string;
+    appointmentDate: string;
+  };
+};
+
 
 
 const ContactUs = (props: Props) => {
@@ -30,7 +30,7 @@ const handleSubmit = (e:
   };
 
 const onChange = (e: 
-  { target: { name: any; value: any; }; }
+  { target: { name: string; value: string; }; }
   ) => {
   setValues(
     { ...values, [e.target.name]: e.target.value }
