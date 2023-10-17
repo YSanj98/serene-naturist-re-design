@@ -39,7 +39,7 @@ function App() {
         name: '',
         email: '',
         appointmentDate: '',
-        massage: ''
+
       }} />
       <Footer />
     </div>
