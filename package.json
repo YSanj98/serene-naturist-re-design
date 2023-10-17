@@ -1,9 +1,12 @@
 {
+  "homepage": "https://YSanj98.github.io/serene-naturist-redesign",
   "name": "serene-naturist-redesign",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
