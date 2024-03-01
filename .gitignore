@@ -11,8 +11,7 @@ lerna-debug.log*
 node_modules
 
 # Build directories
-dist
-build
+
 dist-ssr
 *.local
 
